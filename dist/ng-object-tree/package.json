@@ -1,6 +1,27 @@
 {
   "name": "ng-object-tree",
   "version": "0.0.1",
+  "description": "js object visualizer",
+  "author": "levanlevi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/levanlevi/ng-object-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/levanlevi/ng-object-tree/issues"
+  },
+  "homepage": "https://github.com/levanlevi/ng-object-tree",
+  "keywords": [
+    "angular",
+    "javscript",
+    "object",
+    "visualizer",
+    "tree",
+    "json",
+    "json-visualizer",
+    "typescript"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"

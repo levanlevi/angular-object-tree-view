@@ -10,19 +10,17 @@ export class NgObjectTreeComponent implements OnChanges {
 
   // option to expand arrays horizontally
   @Input() jsonObject: any;
-  entries: JSONModel[] = [];
+  private entries: JSONModel[] = [];
 
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log('changes', changes);
-
     this.convertToJSONModel();
   }
 
   private convertToJSONModel(): any {
     if (Array.isArray(this.jsonObject)) {
-      this.entries = this.jsonObject.map(j => ({ key: j, value: j, expanded: false, expandable: false }));
+      this.entries = this.jsonObject.map(j => ({ key: undefined, value: j, expanded: false, expandable: false }));
     } else {
       const arr = Object.entries(this.jsonObject);
 
