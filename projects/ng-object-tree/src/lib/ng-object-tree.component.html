@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let entry of entries">
+        <!-- non-complex object key-value pairs -->
+        <span *ngIf="!entry.expandable && entry.key">{{entry.key}}:</span> <span style="color:red" *ngIf="!entry.expandable">{{entry.value}}</span>
+
+        <!-- complex object expand link -->
+        <a *ngIf="entry.expandable" href="#" (click)="expandClick(entry)">{{entry.key}}</a>
+
+        <lib-ng-object-tree *ngIf="entry.expanded" [jsonObject]="entry.value"></lib-ng-object-tree>
+    </li>
+</ul>
