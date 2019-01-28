@@ -1,1 +1,1 @@
-# angular-object-tree-view
+# ng-object-tree
