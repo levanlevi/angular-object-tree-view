@@ -1,5 +1,5 @@
-<ul class="">
-    <li *ngFor="let entry of entries">
+<ul class="obj-entry-nodes">
+    <li class="obj-entry-node" *ngFor="let entry of entries">
 
         <!-- non-complex object key-value pairs -->
         <span class="obj-entry-key" *ngIf="!entry.expandable && entry.key">{{entry.key}}:</span>

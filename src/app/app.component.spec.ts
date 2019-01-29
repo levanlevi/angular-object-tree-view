@@ -1,12 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { NgObjectTreeModule } from 'ng-object-tree/public_api';
+import { CommonModule } from '@angular/common';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        NgObjectTreeModule,
+        CommonModule
       ],
       declarations: [
         AppComponent

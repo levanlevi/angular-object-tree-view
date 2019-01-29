@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NgObjectTreeComponent } from './ng-object-tree.component';
+import { CommonModule } from '@angular/common';
+import { NgObjectTreeModule } from 'ng-object-tree/public_api';
 
 describe('NgObjectTreeComponent', () => {
   let component: NgObjectTreeComponent;
@@ -8,9 +10,10 @@ describe('NgObjectTreeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgObjectTreeComponent ]
+      declarations: [NgObjectTreeComponent],
+      imports: [CommonModule, NgObjectTreeModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
