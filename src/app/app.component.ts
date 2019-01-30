@@ -11,6 +11,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.setJson();
+    this.jsonObject = null;
+    // this.jsonObject = {
+    //   triangle: { point: { x: 1, y: 1 } },
+    //   name: 'trio'
+    // };
   }
 
   private setJson(): any {

@@ -1,10 +1,10 @@
-import { Component, OnInit, OnChanges, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import { JSONModel } from './json-model';
 
 @Component({
   selector: 'lib-ng-object-tree',
   templateUrl: 'ng-object-tree.component.html',
-  styles: []
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class NgObjectTreeComponent implements OnChanges {
 
@@ -15,7 +15,9 @@ export class NgObjectTreeComponent implements OnChanges {
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.convertToJSONModel();
+    if (this.jsonObject) {
+      this.convertToJSONModel();
+    }
   }
 
   private convertToJSONModel(): any {

@@ -1,4 +1,4 @@
-<ul class="obj-entry-nodes">
+<ul *ngIf="entries && entries.length > 0" class="obj-entry-nodes">
     <li class="obj-entry-node" *ngFor="let entry of entries">
 
         <!-- non-complex object key-value pairs -->
