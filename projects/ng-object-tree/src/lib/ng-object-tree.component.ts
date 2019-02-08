@@ -8,7 +8,8 @@ import { JSONModel } from './json-model';
 })
 export class NgObjectTreeComponent implements OnChanges {
 
-  // option to expand arrays horizontally
+  // Feature: option to expand arrays horizontally
+  // Feature: show icon?
   @Input() jsonObject: any;
   private entries: JSONModel[] = [];
 
