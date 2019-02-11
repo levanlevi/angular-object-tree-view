@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.setJson();
-    this.jsonObject = null;
+    // this.jsonObject = null;
     // this.jsonObject = {
     //   triangle: { point: { x: 1, y: 1 } },
     //   name: 'trio'
@@ -21,44 +21,44 @@ export class AppComponent implements OnInit {
   private setJson(): any {
     this.jsonObject = {
       '2018-12-11T11:01:11.138Z': {
-        'type': 'Refresh_Command',
-        'description': 'HVR Refresh',
-        'channel': 'hvr_demo43',
+        'type': 'newtype',
+        'description': 'This is a special type',
+        'name': 'hello_',
         'state': 'DONE',
         'start_tstamp': '2018-12-11T11:01:11.138Z',
         'finish_tstamp': '2018-12-11T11:01:11.138Z',
         'body': {
-          'os_user': 'jigsaw',
-          'channel': 'hvr_demo43',
-          'source_loc': 'src',
-          'target_locs': [
-            'avr16',
-            'avr17',
-            'avr18',
-            'avrd6',
-            'avrd7',
-            'avrd8'
+          'user': 'jigsaw',
+          'profile': 'hvr_demo43',
+          'account': 'src',
+          'targets': [
+            '2311aa',
+            '2311aa1',
+            '2311aa2',
+            '2311aa3',
+            '2311aa4',
+            'custom'
           ],
-          'tables': [
-            'dm43_baseline',
-            'dm43_blob',
-            'dm43_boolean',
-            'dm43_char',
-            'dm43_clob',
-            'dm43_decimal',
-            'dm43_dupl',
-            'dm43_float',
-            'dm43_integer',
-            'dm43_lob',
-            'dm43_number',
-            'dm43_pq_date',
-            'dm43_pq_timestamp',
-            'dm43_pq_timestamp_tz',
-            'dm43_time_ntz',
-            'dm43_time_ntz_ice',
-            'dm43_time_tz',
-            'dm43_time_tz_ice',
-            'dm43_varchar'
+          'views': [
+            'lord11',
+            'lord12',
+            'lord13',
+            'lord14',
+            'lord15',
+            'lord16',
+            'lord17',
+            'lord18',
+            'lord19',
+            'lord11',
+            'lord11',
+            'lord12',
+            'lord13',
+            'lord14',
+            'lord15',
+            'lord11',
+            'lord16',
+            'lord17',
+            'huba bubba'
           ],
           'options': [
             '-c bkr',
@@ -68,45 +68,50 @@ export class AppComponent implements OnInit {
         }
       },
       '2018-12-11T11:01:11.448Z': {
-        'type': 'Refresh_Start',
-        'description': 'HVR Refresh',
-        'channel': 'hvr_demo43',
+        'type': 'newtype',
+        'description': 'This is a special type',
+        'name': 'hello_',
         'state': 'DONE',
-        'start_tstamp': '2018-12-11T11:01:11.448Z',
-        'finish_tstamp': '2018-12-11T11:01:11.448Z',
+        'start_tstamp': '2018-12-11T11:01:11.138Z',
+        'finish_tstamp': '2018-12-11T11:01:11.138Z',
         'body': {
-          'channel': 'hvr_demo43',
-          'source_loc': 'src',
-          'target_loc': 'avr16',
-          'job': 'hvr_demo43-refr-src-avr16'
-        }
-      },
-      '2018-12-11T11:01:12.692Z': {
-        'type': 'Refresh_Start',
-        'description': 'HVR Refresh',
-        'channel': 'hvr_demo43',
-        'state': 'DONE',
-        'start_tstamp': '2018-12-11T11:01:12.692Z',
-        'finish_tstamp': '2018-12-11T11:01:12.692Z',
-        'body': {
-          'channel': 'hvr_demo43',
-          'source_loc': 'src',
-          'target_loc': 'avr17',
-          'job': 'hvr_demo43-refr-src-avr17'
-        }
-      },
-      '2018-12-11T11:01:13.874Z': {
-        'type': 'Refresh_Start',
-        'description': 'HVR Refresh',
-        'channel': 'hvr_demo43',
-        'state': 'DONE',
-        'start_tstamp': '2018-12-11T11:01:13.874Z',
-        'finish_tstamp': '2018-12-11T11:01:13.874Z',
-        'body': {
-          'channel': 'hvr_demo43',
-          'source_loc': 'src',
-          'target_loc': 'avr18',
-          'job': 'hvr_demo43-refr-src-avr18'
+          'user': 'jigsaw',
+          'profile': 'hvr_demo43',
+          'account': 'src',
+          'targets': [
+            '2311aa',
+            '2311aa1',
+            '2311aa2',
+            '2311aa3',
+            '2311aa4',
+            'custom'
+          ],
+          'views': [
+            'lord11',
+            'lord12',
+            'lord13',
+            'lord14',
+            'lord15',
+            'lord16',
+            'lord17',
+            'lord18',
+            'lord19',
+            'lord11',
+            'lord11',
+            'lord12',
+            'lord13',
+            'lord14',
+            'lord15',
+            'lord11',
+            'lord16',
+            'lord17',
+            'huba bubba'
+          ],
+          'options': [
+            '-c bkr',
+            '-g b',
+            '-r src'
+          ]
         }
       }
     };
